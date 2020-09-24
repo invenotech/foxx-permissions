@@ -1,0 +1,36 @@
+{
+  "name": "permissions",
+  "version": "0.6.6",
+  "license": "MIT",
+  "description": "User Management",
+  "keywords": ["invenotech", "rest", "privileges", "roles", "permissions"],
+  "author": "David L Dyess II",
+  "contributors": ["David Dyess II <david.dyess@gmail.com>"],
+  "main": "index.js",
+  "scripts": {
+    "setup": "scripts/setup.js"
+  },
+  "provides": {
+    "@invenotech/permissions": "1.0.0"
+  },
+  "dependencies": {
+    "migrations": {
+      "name": "@invenotech/migrations",
+      "version": "^1.0.0",
+      "description": "Migrations Management"
+    },
+    "sessions": {
+      "name": "@invenotech/sessions",
+      "version": "^1.0.0",
+      "description": "Sessions Management"
+    },
+    "users": {
+      "name": "@invenotech/users",
+      "version": "^1.0.0",
+      "description": "Users Management"
+    }
+  },
+  "engines": {
+    "arangodb": "^3.0.0"
+  }
+}
